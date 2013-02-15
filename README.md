@@ -30,6 +30,16 @@ This requires one of the following resolvers:
     // For SNAPSHOT versions
     "Lunatech public snapshots" at "http://artifactory.lunatech.com/artifactory/snapshots-public"
 
+API Docs
+========
+
+The latest api documentation can be found at http://lunatech.com/play2-activiti/latest/api
+
+Examples
+========
+
+TODO
+
 License
 =======
 
