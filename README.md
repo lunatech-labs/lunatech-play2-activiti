@@ -20,7 +20,7 @@ Quick start
 
 Add the following dependency to your application's `Build.scala`:
 
-    "com.lunatech" %% "play2-activiti" %% "0.1-SNAPSHOT"
+    "com.lunatech" %% "play2-activiti" % "0.1-SNAPSHOT"
 
 This requires one of the following resolvers:
 
