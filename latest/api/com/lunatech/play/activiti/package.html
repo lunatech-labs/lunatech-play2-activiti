@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>activiti - com.lunatech.play.activiti</title>
+          <meta name="description" content="activiti - com.lunatech.play.activiti" />
+          <meta name="keywords" content="activiti com.lunatech.play.activiti" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lunatech.play.activiti.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lunatech">lunatech</a>.<a href="../package.html" class="extype" name="com.lunatech.play">play</a></p>
+        <h1>activiti</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activiti</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.lunatech.play.activiti.ActivitiPlugin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActivitiPluginextendsPlugin"></a>
+      <a id="ActivitiPlugin:ActivitiPlugin"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActivitiPlugin.html"><span class="name">ActivitiPlugin</span></a><span class="result"> extends <span class="extype" name="play.api.Plugin">Plugin</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Initializes Activiti and deploys all BPMN definitions in the conf/processes directory.</p>
+    </li><li name="com.lunatech.play.activiti.AppProvidedEngine" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AppProvidedEngineextendsHasEngine"></a>
+      <a id="AppProvidedEngine:AppProvidedEngine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AppProvidedEngine.html"><span class="name">AppProvidedEngine</span></a><span class="result"> extends <a href="HasEngine.html" class="extype" name="com.lunatech.play.activiti.HasEngine">HasEngine</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Engine provided by the 'current' Play application plugin.</p>
+    </li><li name="com.lunatech.play.activiti.CurrentProcessInstance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CurrentProcessInstanceextendsProcessInstance"></a>
+      <a id="CurrentProcessInstance:CurrentProcessInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CurrentProcessInstance.html"><span class="name">CurrentProcessInstance</span></a><span class="result"> extends <a href="ProcessInstance.html" class="extype" name="com.lunatech.play.activiti.ProcessInstance">ProcessInstance</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Scala wrapper for a running process instance
+</p>
+    </li><li name="com.lunatech.play.activiti.HasEngine" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HasEngineextendsObject"></a>
+      <a id="HasEngine:HasEngine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HasEngine.html"><span class="name">HasEngine</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Trait providing an Activiti <code>ProcessEngine</code>
+</p>
+    </li><li name="com.lunatech.play.activiti.HistoricProcessInstance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HistoricProcessInstanceextendsProcessInstance"></a>
+      <a id="HistoricProcessInstance:HistoricProcessInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HistoricProcessInstance.html"><span class="name">HistoricProcessInstance</span></a><span class="result"> extends <a href="ProcessInstance.html" class="extype" name="com.lunatech.play.activiti.ProcessInstance">ProcessInstance</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Scala wrapper for a historic process instance
+</p>
+    </li><li name="com.lunatech.play.activiti.ProcessInstance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ProcessInstanceextendsObject"></a>
+      <a id="ProcessInstance:ProcessInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ProcessInstance.html"><span class="name">ProcessInstance</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Scala wrapper for a process instance
+</p>
+    </li><li name="com.lunatech.play.activiti.Task" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TaskextendsObject"></a>
+      <a id="Task:Task"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Task.html"><span class="name">Task</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.activiti.TaskStatus" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TaskStatusextendsObject"></a>
+      <a id="TaskStatus:TaskStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TaskStatus.html"><span class="name">TaskStatus</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.lunatech.play.activiti.Activiti" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Activiti"></a>
+      <a id="Activiti:Activiti"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Activiti$.html"><span class="name">Activiti</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Public Activiti API</p>
+    </li><li name="com.lunatech.play.activiti.TaskStatus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaskStatus"></a>
+      <a id="TaskStatus:TaskStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TaskStatus$.html"><span class="name">TaskStatus</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.activiti.db" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="db"></a>
+      <a id="db:db"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="db/package.html"><span class="name">db</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.activiti.exceptionhandling" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="exceptionhandling"></a>
+      <a id="exceptionhandling:exceptionhandling"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="exceptionhandling/package.html"><span class="name">exceptionhandling</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
