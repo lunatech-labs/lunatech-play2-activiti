@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
 
 publishTo <<= version { (v: String) =>
   val path = if(v.trim.endsWith("SNAPSHOT")) "snapshots-public" else "releases-public"
-  Some(Resolver.url("Elogistics Artifactory", new URL("http://artifactory.lunatech.com/artifactory/%s/" format path)))
+  Some(Resolver.url("Lunatech Artifactory", new URL("http://artifactory.lunatech.com/artifactory/%s/" format path)))
 }
 
 site.settings
