@@ -1,22 +1,21 @@
 package com.lunatech.play.activiti
 
-import play.api._
-import play.api.Play.current
-import play.api.db.DB
 import scala.collection.JavaConverters.asScalaBufferConverter
-import org.activiti.engine.ProcessEngineConfiguration
-import org.activiti.engine.ProcessEngine
+import org.activiti.engine.{ ProcessEngine, ProcessEngineConfiguration }
 import org.activiti.engine.impl.cfg.ProcessEngineConfigurationImpl
 import org.activiti.engine.impl.history.HistoryLevel
-import com.lunatech.play.activiti.exceptionhandling.RecoverableJobCommandFactory
 import com.lunatech.play.activiti.db.SquerylJoinedTransactionFactory
+import com.lunatech.play.activiti.exceptionhandling.RecoverableJobCommandFactory
+import play.api.{ Application, Logger, Play, Plugin }
+import play.api.db.DB
 
 /**
  * Initializes Activiti and deploys all BPMN definitions in the conf/processes directory.
  */
-class ActivitiPlugin(app: Application) extends Plugin {
+class ActivitiPlugin(implicit app: Application) extends Plugin {
 
-  lazy val engine: ProcessEngine = ProcessEngineConfiguration.
+  lazy val engine: ProcessEngine = {
+    val configuration = ProcessEngineConfiguration.
       createStandaloneProcessEngineConfiguration.asInstanceOf[ProcessEngineConfigurationImpl].
       setFailedJobCommandFactory(new RecoverableJobCommandFactory()).
       setProcessEngineName("Activiti Process Engine").
@@ -24,8 +23,10 @@ class ActivitiPlugin(app: Application) extends Plugin {
       setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE).
       setJobExecutorActivate(true).
       setTransactionFactory(new SquerylJoinedTransactionFactory()).
-      setHistory(HistoryLevel.ACTIVITY.getKey).
-      buildProcessEngine()
+      setHistory(HistoryLevel.ACTIVITY.getKey)
+
+    addProjectConfiguration(configuration).buildProcessEngine()
+  }
 
   /**
    * Start the Activiti Process Engine and load new process definitions.
@@ -56,5 +57,17 @@ class ActivitiPlugin(app: Application) extends Plugin {
         .enableDuplicateFiltering() // Don't deploy if it's already deployed
         .deploy()
     }
+  }
+
+  /**
+   * Lookup if the configuration file has a 'Configurator' defined, and use it to further configure the process engine.
+   */
+  private def addProjectConfiguration(processEngineConfiguration: ProcessEngineConfiguration) = {
+    app.configuration.getString("activiti.configurator") map { className =>
+      Logger.info("Trying to load class %s to configure Activiti" format className)
+      val configuratorClass = Play.classloader.loadClass(className).asInstanceOf[Class[Configurator]]
+      val configurator = configuratorClass.getConstructor(classOf[Application]).newInstance(app)
+      configurator.configure(processEngineConfiguration)
+    } getOrElse processEngineConfiguration
   }
 }

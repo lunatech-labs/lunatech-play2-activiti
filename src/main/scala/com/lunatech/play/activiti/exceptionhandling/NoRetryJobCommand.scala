@@ -16,7 +16,7 @@ class NoRetryJobCommand(jobId: String, exception: Throwable) extends Command[Obj
   override def execute(commandContext: CommandContext) = {
     val job: JobEntity = Context
       .getCommandContext()
-      .getJobManager()
+      .getJobEntityManager()
       .findJobById(jobId)
 
     job.setRetries(0)

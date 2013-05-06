@@ -30,6 +30,13 @@ This requires one of the following resolvers:
     // For SNAPSHOT versions
     "Lunatech public snapshots" at "http://artifactory.lunatech.com/artifactory/snapshots-public"
 
+Add a configuration setting for the processes you want to load:
+
+    processDefinitions = [
+      "Foo.bpmn",
+      "Bar.bpmn"
+    ]
+
 API Docs
 ========
 

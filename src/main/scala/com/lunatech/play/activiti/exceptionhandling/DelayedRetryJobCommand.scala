@@ -17,7 +17,7 @@ class DelayedRetryJobCommand(jobId: String, exception: Throwable) extends Comman
   override def execute(commandContext: CommandContext) = {
     val job: JobEntity = Context
       .getCommandContext()
-      .getJobManager()
+      .getJobEntityManager()
       .findJobById(jobId)
 
     if (job.getDuedate == null) {
