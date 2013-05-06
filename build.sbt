@@ -2,7 +2,7 @@ organization := "com.lunatech"
 
 name := "play2-activiti"
 
-version := "0.2-SNAPSHOT"
+version := "0.2.0"
 
 scalaVersion := "2.10.0"
 
