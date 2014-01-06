@@ -2,22 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Activiti - com.lunatech.play.activiti.Activiti</title>
-          <meta name="description" content="Activiti - com.lunatech.play.activiti.Activiti" />
-          <meta name="keywords" content="Activiti com.lunatech.play.activiti.Activiti" />
+          <title>Transformers - com.lunatech.play.json.Transformers</title>
+          <meta name="description" content="Transformers - com.lunatech.play.json.Transformers" />
+          <meta name="keywords" content="Transformers com.lunatech.play.json.Transformers" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'com.lunatech.play.activiti.Activiti$';
+            var hash = 'com.lunatech.play.json.Transformers$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -30,8 +25,8 @@
         <body class="value">
       <div id="definition">
         <img src="../../../../lib/object_big.png" />
-        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lunatech">lunatech</a>.<a href="../package.html" class="extype" name="com.lunatech.play">play</a>.<a href="package.html" class="extype" name="com.lunatech.play.activiti">activiti</a></p>
-        <h1>Activiti</h1>
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lunatech">lunatech</a>.<a href="../package.html" class="extype" name="com.lunatech.play">play</a>.<a href="package.html" class="extype" name="com.lunatech.play.json">json</a></p>
+        <h1>Transformers</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,12 +35,11 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Activiti</span>
+        <span class="name">Transformers</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Public Activiti API</p><p>The underlying process engine is provided by the Activiti Plugin.
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -65,7 +59,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.lunatech.play.activiti.Activiti"><span>Activiti</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.lunatech.play.json.Transformers"><span>Transformers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -156,6 +150,58 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.lunatech.play.json.Transformers#add" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="add(key:String,value:play.api.libs.json.JsValue):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="add(String,JsValue):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">add</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#add" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="add(path:play.api.libs.json.JsPath,value:play.api.libs.json.JsValue):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="add(JsPath,JsValue):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">add</span><span class="params">(<span name="path">path: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>, <span name="value">value: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#addAll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAll(fields:(String,play.api.libs.json.Json.JsValueWrapper)*):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="addAll((String,JsValueWrapper)*):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAll</span><span class="params">(<span name="fields">fields: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="play.api.libs.json.Json.JsValueWrapper">JsValueWrapper</span>)*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#all" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="all(transforms:play.api.libs.json.Reads[_&lt;:play.api.libs.json.JsValue]*):play.api.libs.json.Reads[_&lt;:play.api.libs.json.JsValue]"></a>
+      <a id="all(Reads[_&lt;:JsValue]*):Reads[_&lt;:JsValue]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">all</span><span class="params">(<span name="transforms">transforms: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[_ &lt;: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[_ &lt;: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -181,10 +227,39 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.lunatech.play.json.Transformers#copy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="copy(key:String,newKey:String):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="copy(String,String):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copy</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="newKey">newKey: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#copy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="copy(path:play.api.libs.json.JsPath,newPath:play.api.libs.json.JsPath):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="copy(JsPath,JsPath):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copy</span><span class="params">(<span name="path">path: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>, <span name="newPath">newPath: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -223,8 +298,11 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -253,19 +331,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.lunatech.play.activiti.Activiti#historyService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="historyService(implicitapp:play.api.Application):org.activiti.engine.HistoryService"></a>
-      <a id="historyService(Application):HistoryService"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">historyService</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.HistoryService">HistoryService</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -279,16 +344,16 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.lunatech.play.activiti.Activiti#managementService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="managementService(implicitapp:play.api.Application):org.activiti.engine.ManagementService"></a>
-      <a id="managementService(Application):ManagementService"></a>
+    </li><li name="com.lunatech.play.json.Transformers#manual" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="manual(fn:play.api.libs.json.JsValue=&gt;play.api.libs.json.JsValue):play.api.libs.json.Reads[_&lt;:play.api.libs.json.JsValue]"></a>
+      <a id="manual((JsValue)⇒JsValue):Reads[_&lt;:JsValue]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">managementService</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.ManagementService">ManagementService</span></span>
+        <span class="name">manual</span><span class="params">(<span name="fn">fn: (<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[_ &lt;: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
       </span>
       </h4>
       
@@ -331,42 +396,68 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.lunatech.play.activiti.Activiti#processEngine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="processEngine(implicitapp:play.api.Application):org.activiti.engine.ProcessEngine"></a>
-      <a id="processEngine(Application):ProcessEngine"></a>
+    </li><li name="com.lunatech.play.json.Transformers#remove" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="remove(field:String):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="remove(String):Reads[JsObject]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">processEngine</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.ProcessEngine">ProcessEngine</span></span>
+        <span class="name">remove</span><span class="params">(<span name="field">field: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
       </span>
       </h4>
       
-    </li><li name="com.lunatech.play.activiti.Activiti#repositoryService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="repositoryService(implicitapp:play.api.Application):org.activiti.engine.RepositoryService"></a>
-      <a id="repositoryService(Application):RepositoryService"></a>
+    </li><li name="com.lunatech.play.json.Transformers#remove" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="remove(path:play.api.libs.json.JsPath):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="remove(JsPath):Reads[JsObject]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">repositoryService</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.RepositoryService">RepositoryService</span></span>
+        <span class="name">remove</span><span class="params">(<span name="path">path: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
       </span>
       </h4>
       
-    </li><li name="com.lunatech.play.activiti.Activiti#runtimeService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runtimeService(implicitapp:play.api.Application):org.activiti.engine.RuntimeService"></a>
-      <a id="runtimeService(Application):RuntimeService"></a>
+    </li><li name="com.lunatech.play.json.Transformers#removeAll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeAll(fields:String*):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="removeAll(String*):Reads[JsObject]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runtimeService</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.RuntimeService">RuntimeService</span></span>
+        <span class="name">removeAll</span><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#rename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rename(oldPath:play.api.libs.json.JsPath,newPath:play.api.libs.json.JsPath):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="rename(JsPath,JsPath):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rename</span><span class="params">(<span name="oldPath">oldPath: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>, <span name="newPath">newPath: <span class="extype" name="play.api.libs.json.JsPath">JsPath</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.lunatech.play.json.Transformers#rename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rename(oldKey:String,newKey:String):play.api.libs.json.Reads[play.api.libs.json.JsObject]"></a>
+      <a id="rename(String,String):Reads[JsObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rename</span><span class="params">(<span name="oldKey">oldKey: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="newKey">newKey: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
       </span>
       </h4>
       
@@ -383,19 +474,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.lunatech.play.activiti.Activiti#taskService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="taskService(implicitapp:play.api.Application):org.activiti.engine.TaskService"></a>
-      <a id="taskService(Application):TaskService"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">taskService</span><span class="params">(<span class="implicit">implicit </span><span name="app">app: <span class="extype" name="play.api.Application">Application</span></span>)</span><span class="result">: <span class="extype" name="org.activiti.engine.TaskService">TaskService</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -409,6 +487,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lunatech.play.json.Transformers#using" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="using[A&lt;:play.api.libs.json.JsValue](fn:play.api.libs.json.JsValue=&gt;play.api.libs.json.Reads[A]):play.api.libs.json.Reads[A]"></a>
+      <a id="using[A&lt;:JsValue]((JsValue)⇒Reads[A]):Reads[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">using</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>]</span><span class="params">(<span name="fn">fn: (<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>) ⇒ <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="com.lunatech.play.json.Transformers.using.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="com.lunatech.play.json.Transformers.using.A">A</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -422,7 +513,10 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -438,7 +532,10 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -454,7 +551,10 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -486,7 +586,6 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
     </body>
       </html>
