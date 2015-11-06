@@ -13,7 +13,7 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % "2.4.3",
   "com.typesafe.play" %% "play-jdbc" % "2.4.3",
-  "org.activiti" % "activiti-engine" % "5.18.0",
+  "org.activiti" % "activiti-engine" % "5.19.0",
   // For the SquerylJoinedTransactionFactory
   "org.squeryl" %% "squeryl" % "0.9.5-7")
 

@@ -4,7 +4,7 @@ import java.io.{ PrintWriter, StringWriter }
 import org.activiti.engine.impl.cfg.TransactionState
 import org.activiti.engine.impl.context.Context
 import org.activiti.engine.impl.interceptor.{ Command, CommandContext }
-import org.activiti.engine.impl.jobexecutor.MessageAddedNotification
+import org.activiti.engine.impl.jobexecutor.JobAddedNotification
 import org.activiti.engine.impl.persistence.entity.JobEntity
 import org.joda.time.DateTime
 
@@ -28,7 +28,7 @@ class NoRetryJobCommand(jobId: String, exception: Throwable) extends Command[Obj
     job.setExceptionStacktrace(getExceptionStacktrace())
 
     val jobExecutor = Context.getProcessEngineConfiguration().getJobExecutor()
-    val messageAddedNotification = new MessageAddedNotification(jobExecutor)
+    val messageAddedNotification = new JobAddedNotification(jobExecutor)
     val transactionContext = commandContext.getTransactionContext()
     transactionContext.addTransactionListener(TransactionState.COMMITTED, messageAddedNotification)
 

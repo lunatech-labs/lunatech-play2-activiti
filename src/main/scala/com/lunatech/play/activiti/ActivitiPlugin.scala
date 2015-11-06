@@ -18,11 +18,11 @@ class ActivitiPlugin(implicit app: Application) extends Plugin {
     val configuration = ProcessEngineConfiguration.
       createStandaloneProcessEngineConfiguration.asInstanceOf[ProcessEngineConfigurationImpl].
       setFailedJobCommandFactory(new RecoverableJobCommandFactory()).
+      setTransactionFactory(new SquerylJoinedTransactionFactory()).
       setProcessEngineName("Activiti Process Engine").
       setDataSource(DB.getDataSource()(app)).
       setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE).
       setJobExecutorActivate(true).
-      setTransactionFactory(new SquerylJoinedTransactionFactory()).
       setHistory(HistoryLevel.ACTIVITY.getKey)
 
     addProjectConfiguration(configuration).buildProcessEngine()
