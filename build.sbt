@@ -4,18 +4,18 @@ name := "play2-activiti"
 
 version := "0.2.1-SNAPSHOT"
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.11.11"
 
 resolvers ++= Seq(
   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
   "Alfresco Maven Repository" at "https://maven.alfresco.com/nexus/content/groups/public/")
 
 libraryDependencies ++= Seq(
-  "play" %% "play" % "2.1.0",
-  "play" %% "play-jdbc" % "2.1.0",
+  "com.typesafe.play" %% "play-ws" % "2.3.6",
+  "com.typesafe.play" % "play-jdbc_2.11" % "2.3.10",
   "org.activiti" % "activiti-engine" % "5.12",
   // For the SquerylJoinedTransactionFactory
-  "org.squeryl" %% "squeryl" % "0.9.5-6")
+  "org.squeryl" %% "squeryl" % "0.9.9")
 
 publishTo <<= version { (v: String) =>
   val path = if(v.trim.endsWith("SNAPSHOT")) "snapshots-public" else "releases-public"
